@@ -1,0 +1,16 @@
+services:
+  a:
+    build:
+      context: ./a
+    environment:
+      - ipA2B=b
+      - pageA=<h1>假的</h1>
+    ports:
+      - "8083:8083"
+  b:
+    build:
+      context: ./b
+    environment:
+      - pageB=<h1>8083</h1>
+    ports:
+      - "8084:8084"
