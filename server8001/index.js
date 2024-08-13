@@ -3,7 +3,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const port=process.env.portA||8083
+const port=process.env.portA||8001
 const ip=process.env.ipA||'0.0.0.0'
 const page=process.env.pageA||'<h1>AAA</h1>'
 
@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
 
   const options = {
     hostname: process.env.ipA2B||'127.0.0.1', // 这里假设服务器 B 在本地运行
-    port: process.env.portB||8084,             // 这里假设服务器 B 使用的端口号
+    port: process.env.portB||7001,             // 这里假设服务器 B 使用的端口号
     path: '/',
     method: 'GET',
   };

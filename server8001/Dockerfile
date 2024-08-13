@@ -2,13 +2,13 @@
 FROM node:16
 
 # 创建并设置工作目录
-WORKDIR /usr/src/serverA
+WORKDIR /usr/src/server8001
 
 # 将当前目录内容复制到工作目录中
 COPY . .
 
 # 暴露应用程序的端口
-EXPOSE 8083
+EXPOSE 8001
 
 # 启动应用程序
 ENTRYPOINT ["node", "index.js"]

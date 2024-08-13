@@ -1,5 +1,5 @@
 const http=require('http')
-const port=process.env.portB||8084
+const port=process.env.portB||7001
 const ip=process.env.ipB||'0.0.0.0'
 const code=process.env.codeB||200
 const page=process.env.pageB||'<h1>BBB</h1>'
