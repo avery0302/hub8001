@@ -1,5 +1,6 @@
 services:
   a:
+    image: ghcr.io/avery0302/hub8001:v1.0.0-a
     build:
       context: ./server8001
     environment:
@@ -8,6 +9,7 @@ services:
     ports:
       - "8001:8001"
   b:
+    image: ghcr.io/avery0302/hub8001:v1.0.0-b
     build:
       context: ./server7001
     environment:
